@@ -55,7 +55,7 @@ class BlogController extends Controller
 
                 }
 
-                return '<div class="action-icon">' . $show_icon . $edit_icon . $del_icon . '</div>';
+                return '<div class="action-icon text-nowrap">' . $show_icon . $edit_icon . $del_icon . '</div>';
             })
             ->rawColumns(['photo', 'action'])
             ->make(true);

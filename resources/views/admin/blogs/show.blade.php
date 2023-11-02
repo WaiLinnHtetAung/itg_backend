@@ -19,6 +19,7 @@
             <div class="my-3 d-flex flex-column align-tiems-start blog-content">
                 <p><b>Author - </b>{{ $blog->author->name }}</p>
                 <p><b>Date - </b> {{ $blog->date }}</p>
+                <h3 class="mt-2">{{ $blog->title }}</h3>
                 <div class="my-3">
                     {!! $blog->content !!}
                 </div>
