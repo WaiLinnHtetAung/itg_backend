@@ -13,6 +13,9 @@ jobs:
       - name: Checkout the files
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: composer install --no-progress --no-suggest --prefer-dist
+
       - name: Deploy to server
         uses: easingthemes/ssh-deploy@main
         env:
