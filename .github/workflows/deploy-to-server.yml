@@ -16,9 +16,6 @@ jobs:
       - name: Install dependencies
         run: composer install --no-progress --no-suggest --prefer-dist
 
-      - name: Migration
-        run: cd /var/www/itg_backend && php artisan migrate --force
-
       - name: Deploy to server
         uses: easingthemes/ssh-deploy@main
         env:
