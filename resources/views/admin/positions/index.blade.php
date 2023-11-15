@@ -89,6 +89,9 @@
                         $.ajax({
                             url: "/admin/positions/" + id,
                             type: "DELETE",
+                            data: {
+                                _token: "{{ csrf_token() }}"
+                            },
                             success: function() {
                                 table.ajax.reload();
                             }
